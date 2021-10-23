@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Pizza</title>
+</head>
+    <body style="font-family: Arial, Helvetica, sans-serif; font-size: small; margin: 30px;">
+        <form action="http://blackgoosebistro.com/pizza.php" method="post">
+        <fieldset style="width: 35%; margin-left: 33%; padding-left: +2%;">
+        <h1 style="font-size: 16px;">Black Goose Bistro | Pizza-on-Demand</h1>
+        <p>Our 12" wood-fired pizzas are available for delivery. Build your<br/> custom pizza and we'll dellver it within an hour.</p>
+        <table>    
+            <tr>
+                <td>Your Information</td>
+            </tr>
+            <tr>
+                <td>Name : <input type="text" name="customername"></td>
+            </tr>
+            <tr>
+                <td>Address : <input type="text" name="address"></td>
+            </tr>
+            <tr>
+                <td>Telephone Number : <input type="text" name="telephone"></td>
+            </tr>
+            <tr>
+                <td>Emai : <input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Delivery Instructions : </td>
+            </tr>
+            <tr>
+                <td><textarea cols="38" rows="5" maxlength="400" name="instructions"></textarea></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><b>Design Your Dream Pizza</b></td>
+            </tr>
+            <tr>
+                <td>Pizza specs</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>Crust (Choose one)</td>
+            </tr>
+            <tr>
+                <td style="text-indent: 10pt;"><input type="radio" name="crust" value="Classic white">Classic white</td>
+            </tr>
+            <tr>
+                <td style="text-indent: 10pt;"><input type="radio" name="crust" value="Multigrain">Multigrain</td>
+            </tr>
+            <tr>
+                <td style="text-indent: 10pt;"><input type="radio" name="crust" value="Cheese-stuffed crust">Cheese-stuffed crust</td>
+            </tr>
+            <tr>
+                <td style="text-indent: 10pt;"><input type="radio" name="crust" value="Gluuten-free">Glutten-free</td>
+            </tr>
+            <tr>
+                <td>Toppings (choose as many as you want)</td>
+            </tr>
+            <tr>
+                <td style="text-indent: 10pt;"><input type="checkbox" name="toppings[]" value="Red sauce" checked>Red Ssauce</td>
+            </tr>
+            <tr>
+                <td style="text-indent: 10pt;"><input type="checkbox" name="toppings[]" value="White sauce">White sauce</td>
+            </tr>
+            <tr>
+                <td style="text-indent: 10pt;"><input type="checkbox" name="topping[]" value="Mozzarella Cheese">Mozzarella Cheese</td>
+            </tr>
+            <tr>
+                <td style="text-indent: 10pt;"><input type="checkbox" name="topping[]" value="Pepperoni">Pepperoni</td>
+            </tr>
+            <tr>
+                <td style="text-indent: 10pt;"><input type="checkbox" name="toppings[]" value="Mushrooms">Mushrooms</td>
+            </tr>
+            <tr>
+                <td style="text-indent: 10pt;"><input type="checkbox" name="toppings[]" value="Peppers">Peppers</td>
+            </tr>
+            <tr>
+                <td style="text-indent: 10pt;"><input type="checkbox" name="toppings[]" value="Anchovies">Anchovies</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>Number</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>How many pizzas :</td>
+                <td>
+                    <select name="pizzas" style="width: 30px;">
+                    <option value="" style="text-align: center;">How many pizzas?</option>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>               
+                <td><input type="submit" value="Bring me a pizza!"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+    </body>
+</html>
